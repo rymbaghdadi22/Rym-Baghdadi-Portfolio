@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Sparkles, Database, Code2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -10,90 +9,72 @@ interface Project {
   icon: LucideIcon;
   featured: boolean;
 }
+
 const projects: Project[] = [
   {
     title: "Zayaina",
-    subtitle: "AI-Powered Fashion Assistant",
-    tech: ["Yii / PHP", "AI Integration", "MySQL"],
+    subtitle: "AI-Powered Fashion Platform",
+    tech: ["OpenAI API", "AI", "MySQL"],
     description:
-      "Built an AI-powered fashion assistant that converts natural user requests into structured product searches, improving shopping accuracy and delivering relevant results in real-time.",
+      "An AI-powered platform that turns natural-language shopping requests into highly accurate SQL queries, understanding real conversational chat, pricing, and intent to fetch the most reliable product options from Amazon.",
     icon: Sparkles,
     featured: true,
   },
   {
-    title: "Payment Gateway System",
-    subtitle: "Multi-Bank Integration Platform",
-    tech: ["Yii / PHP", "Secure Transactions", "API Integration"],
+    title: "Medical Courses Platform",
+    subtitle: "E-Learning System",
+    tech: ["PHP", "RBAC", "MySQL", "REST APIs"],
     description:
-      "Developed a configurable payment system allowing businesses to integrate multiple banking providers with secure transaction processing and automated payment status updates.",
+      "A medical e-learning platform for managing courses, enrollments, and users with role-based access control for admins, instructors, and students.",
     icon: Database,
     featured: false,
   },
   {
-    title: "Election Management Platform",
-    subtitle: "Voter & Reporting System",
-    tech: ["PHP", "Dashboards", "Reporting Tools"],
+    title: "Election Management System",
+    subtitle: "Voter & District Control",
+    tech: ["PHP (Yii2)", "RBAC", "MySQL", "Data Scoping"],
     description:
-      "Contributed to a large-scale election management platform featuring real-time dashboards, voter tracking, automated reporting, and data export tools to support strategic decision-making.",
+      "An election system platform with event-driven workflows, analytical dashboards, advanced filtering, queued export jobs with PDF generation, and survey modules.",
     icon: Code2,
     featured: false,
   },
   {
-    title: "Medical E-Learning Platform",
-    subtitle: "Course & User Management System",
-    tech: ["PHP", "Access Control", "MySQL"],
+    title: "Payment Gateway API",
+    subtitle: "Webhook-Enabled Integration",
+    tech: ["PHP (Yii2)", "Webhooks", "MySQL", "REST APIs"],
     description:
-      "Developed a digital learning platform for medical professionals, managing courses, enrollments, and user permissions to streamline online education workflows.",
+      "A flexible payment gateway supporting multiple banking systems with configurable credentials, platform selection, and full webhook integration.",
     icon: Database,
     featured: false,
   },
   {
-    title: "Demo Environment Automation Tool",
-    subtitle: "Internal Productivity System",
-    tech: ["Python", "Automation", "Deployment Support"],
+    title: "Demo Environment Generator",
+    subtitle: "Automation Tool",
+    tech: ["Python", "Automation", "MySQL"],
     description:
-      "Built automation tools to generate ready-to-use demo environments, reducing manual setup time by 80% and improving sales and onboarding efficiency.",
+      "Automated tools for generating demo environments, reducing manual setup time by 80%. Streamlined deployment and configuration for client demonstrations.",
     icon: Code2,
     featured: false,
   },
 ];
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" as const },
-  }),
-};
-
 const Projects = () => {
   return (
     <section id="projects" className="section-padding">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
+        <div className="mb-16">
           <p className="text-primary font-heading text-sm tracking-widest uppercase mb-2">Portfolio</p>
           <h2 className="text-3xl md:text-5xl font-heading font-bold">
             Featured <span className="text-gradient">Projects</span>
           </h2>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, i) => {
+          {projects.map((project) => {
             const Icon = project.icon;
             return (
-              <motion.div
+              <div
                 key={project.title}
-                custom={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={cardVariants}
                 className={`group relative rounded-xl border border-border bg-card p-6 hover:border-primary/40 transition-all duration-500 ${
                   project.featured ? "md:col-span-2 lg:col-span-2" : ""
                 }`}
@@ -116,7 +97,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>

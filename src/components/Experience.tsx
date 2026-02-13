@@ -1,0 +1,92 @@
+import { motion } from "framer-motion";
+import { Briefcase } from "lucide-react";
+
+const experiences = [
+  {
+    title: "Backend Engineer",
+    company: "Bitminds.ai",
+    period: "Jun 2024 – Present",
+    location: "Tripoli, Lebanon",
+    points: [
+      "Improved platform performance by optimizing MySQL queries and restructuring backend logic",
+      "Implemented RBAC and queue processing to enhance system security and reliability",
+      "Built a webhook-enabled payment API enabling seamless integrations with banks and external platforms",
+      "Developed automated tools for generating demo environments, reducing manual setup time by 80%",
+      "Integrated AI-powered workflow assistants that increased admin efficiency and reduced operational load",
+    ],
+  },
+  {
+    title: "Backend Development Intern",
+    company: "UbilityAI",
+    period: "Dec 2023 – Mar 2024",
+    location: "Tripoli, Lebanon",
+    points: [
+      "Built and automated test suites using Robot Framework, improving test coverage",
+      "Developed reusable Python modules integrated with internal APIs and third-party services",
+      "Designed workflow automation scripts that enhanced system reliability",
+      "Collaborated with backend engineers to test, debug, and validate features across environments",
+    ],
+  },
+];
+
+const Experience = () => {
+  return (
+    <section id="experience" className="section-padding">
+      <div className="max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <p className="text-primary font-heading text-sm tracking-widest uppercase mb-2">Career</p>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold">
+            Work <span className="text-gradient">Experience</span>
+          </h2>
+        </motion.div>
+
+        <div className="relative">
+          {/* Timeline line */}
+          <div className="absolute left-[19px] top-0 bottom-0 w-px bg-border" />
+
+          <div className="space-y-12">
+            {experiences.map((exp, i) => (
+              <motion.div
+                key={exp.company}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.15, duration: 0.5 }}
+                className="relative pl-12"
+              >
+                {/* Dot */}
+                <div className="absolute left-2.5 top-1 w-4 h-4 rounded-full border-2 border-primary bg-background" />
+
+                <div className="rounded-xl border border-border bg-card p-6">
+                  <div className="flex flex-wrap items-center gap-2 mb-1">
+                    <Briefcase size={16} className="text-primary" />
+                    <h3 className="font-heading font-semibold text-lg">{exp.title}</h3>
+                  </div>
+                  <p className="text-sm text-primary font-medium mb-1">{exp.company}</p>
+                  <p className="text-xs text-muted-foreground mb-4">
+                    {exp.period} · {exp.location}
+                  </p>
+                  <ul className="space-y-2">
+                    {exp.points.map((point, j) => (
+                      <li key={j} className="flex gap-2 text-sm text-muted-foreground">
+                        <span className="text-primary mt-1 shrink-0">▹</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;

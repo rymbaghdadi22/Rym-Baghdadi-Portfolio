@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
-
 const experiences = [
   {
     title: "Backend Engineer",
@@ -8,11 +7,11 @@ const experiences = [
     period: "Jun 2024 – Present",
     location: "Tripoli, Lebanon",
     points: [
-      "Improved platform performance by optimizing MySQL queries and restructuring backend logic",
-      "Implemented RBAC and queue processing to enhance system security and reliability",
-      "Built a webhook-enabled payment API enabling seamless integrations with banks and external platforms",
-      "Developed automated tools for generating demo environments, reducing manual setup time by 80%",
-      "Integrated AI-powered workflow assistants that increased admin efficiency and reduced operational load",
+      "Improved system performance and reduced response time by restructuring backend architecture and optimizing database operations",
+      "Strengthened platform security and reliability by implementing structured access control and background processing systems",
+      "Developed a secure payment integration solution enabling businesses to connect with multiple banking providers",
+      "Built internal automation tools that reduced manual demo setup time by 80% and increased operational efficiency",
+      "Integrated AI-driven workflow assistants to enhance administrative productivity and reduce repetitive tasks",
     ],
   },
   {
@@ -21,10 +20,10 @@ const experiences = [
     period: "Dec 2023 – Mar 2024",
     location: "Tripoli, Lebanon",
     points: [
-      "Built and automated test suites using Robot Framework, improving test coverage",
-      "Developed reusable Python modules integrated with internal APIs and third-party services",
-      "Designed workflow automation scripts that enhanced system reliability",
-      "Collaborated with backend engineers to test, debug, and validate features across environments",
+      "Developed and automated backend test suites to improve system stability and reliability",
+      "Built reusable Python modules integrated with internal and third-party services",
+      "Designed workflow automation scripts that enhanced system performance",
+      "Collaborated with engineering teams to test, debug, and validate new platform features",
     ],
   },
 ];

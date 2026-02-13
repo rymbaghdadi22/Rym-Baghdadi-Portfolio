@@ -20,11 +20,11 @@ const Hero = () => {
             <span className="text-gradient">Rym Baghdadi</span>
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-lg mb-8">
-            Specialized in building secure, scalable platforms using PHP&nbsp;(Yii2), Python, and MySQL. Passionate about automation, clean architecture, and delivering production-ready backend systems.
+            Specialized in building secure, scalable platforms using PHP&nbsp;(Yii2),Laravel, Python, and MySQL. Passionate about automation, clean architecture, and delivering production-ready backend systems.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
-            {["PHP (Yii2)", "Python", "MySQL", "REST APIs", "Webhooks", "RBAC", "AWS"].map((skill) => (
+            {["PHP frameworks", "Python", "MySQL", "REST APIs", "Webhooks", "RBAC"].map((skill) => (
               <span
                 key={skill}
                 className="px-3 py-1.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground border border-border"
@@ -38,7 +38,7 @@ const Hero = () => {
             <span className="flex items-center gap-1.5"><MapPin size={14} className="text-primary" /> Tripoli, Lebanon</span>
             <a href="mailto:rimbaghdadi22@gmail.com" className="flex items-center gap-1.5 hover:text-primary transition-colors"><Mail size={14} className="text-primary" /> rimbaghdadi22@gmail.com</a>
             <a href="https://linkedin.com/in/rym-baghdadi" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors"><Linkedin size={14} className="text-primary" /> LinkedIn</a>
-            <a href="https://gitlab.com/rymbagh" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors"><GitlabIcon size={14} className="text-primary" /> GitLab</a>
+            {/* <a href="https://gitlab.com/rymbagh" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors"><GitlabIcon size={14} className="text-primary" /> GitLab</a> */}
           </div>
         </motion.div>
 

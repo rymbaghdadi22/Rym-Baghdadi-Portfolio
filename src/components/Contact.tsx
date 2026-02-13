@@ -6,7 +6,7 @@ const contactItems = [
   { icon: Phone, label: "Phone", value: "+961 71690644", href: "tel:+96171690644" },
   { icon: MapPin, label: "Location", value: "Tripoli, Lebanon", href: undefined },
   { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/rym-baghdadi", href: "https://linkedin.com/in/rym-baghdadi" },
-  { icon: GitlabIcon, label: "GitLab", value: "gitlab.com/rymbagh", href: "https://gitlab.com/rymbagh" },
+  // { icon: GitlabIcon, label: "GitLab", value: "gitlab.com/rymbagh", href: "https://gitlab.com/rymbagh" },
 ];
 
 const Contact = () => {

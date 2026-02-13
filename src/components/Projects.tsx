@@ -10,50 +10,49 @@ interface Project {
   icon: LucideIcon;
   featured: boolean;
 }
-
 const projects: Project[] = [
   {
     title: "Zayaina",
-    subtitle: "AI-Powered Fashion Platform",
-    tech: ["OpenAI API", "AI", "MySQL"],
+    subtitle: "AI-Powered Fashion Assistant",
+    tech: ["Yii / PHP", "AI Integration", "MySQL"],
     description:
-      "An AI-powered platform that turns natural-language shopping requests into highly accurate SQL queries, understanding real conversational chat, pricing, and intent to fetch the most reliable product options from Amazon.",
+      "Built an AI-powered fashion assistant that converts natural user requests into structured product searches, improving shopping accuracy and delivering relevant results in real-time.",
     icon: Sparkles,
     featured: true,
   },
   {
-    title: "Medical Courses Platform",
-    subtitle: "E-Learning System",
-    tech: ["PHP (Yii2)", "RBAC", "MySQL", "REST APIs"],
+    title: "Payment Gateway System",
+    subtitle: "Multi-Bank Integration Platform",
+    tech: ["Yii / PHP", "Secure Transactions", "API Integration"],
     description:
-      "A medical e-learning platform for managing courses, enrollments, and users with role-based access control for admins, instructors, and students.",
+      "Developed a configurable payment system allowing businesses to integrate multiple banking providers with secure transaction processing and automated payment status updates.",
     icon: Database,
     featured: false,
   },
   {
-    title: "Election Management System",
-    subtitle: "Voter & District Control",
-    tech: ["PHP (Yii2)", "RBAC", "MySQL", "Data Scoping"],
+    title: "Election Management Platform",
+    subtitle: "Voter & Reporting System",
+    tech: ["PHP", "Dashboards", "Reporting Tools"],
     description:
-      "An election system platform with event-driven workflows, analytical dashboards, advanced filtering, queued export jobs with PDF generation, and survey modules.",
+      "Contributed to a large-scale election management platform featuring real-time dashboards, voter tracking, automated reporting, and data export tools to support strategic decision-making.",
     icon: Code2,
     featured: false,
   },
   {
-    title: "Payment Gateway API",
-    subtitle: "Webhook-Enabled Integration",
-    tech: ["PHP (Yii2)", "Webhooks", "MySQL", "REST APIs"],
+    title: "Medical E-Learning Platform",
+    subtitle: "Course & User Management System",
+    tech: ["PHP", "Access Control", "MySQL"],
     description:
-      "A flexible payment gateway supporting multiple banking systems with configurable credentials, platform selection, and full webhook integration.",
+      "Developed a digital learning platform for medical professionals, managing courses, enrollments, and user permissions to streamline online education workflows.",
     icon: Database,
     featured: false,
   },
   {
-    title: "Demo Environment Generator",
-    subtitle: "Automation Tool",
-    tech: ["Python", "Automation", "MySQL"],
+    title: "Demo Environment Automation Tool",
+    subtitle: "Internal Productivity System",
+    tech: ["Python", "Automation", "Deployment Support"],
     description:
-      "Automated tools for generating demo environments, reducing manual setup time by 80%. Streamlined deployment and configuration for client demonstrations.",
+      "Built automation tools to generate ready-to-use demo environments, reducing manual setup time by 80% and improving sales and onboarding efficiency.",
     icon: Code2,
     featured: false,
   },

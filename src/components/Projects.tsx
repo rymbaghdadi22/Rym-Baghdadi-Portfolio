@@ -14,7 +14,7 @@ const projects: Project[] = [
   {
     title: "Zayaina",
     subtitle: "AI-Powered Fashion Platform",
-    tech: ["OpenAI API", "AI", "MySQL"],
+    tech: ["PHP (Yii2)","React"],
     description:
       "An AI-powered platform that turns natural-language shopping requests into highly accurate SQL queries, understanding real conversational chat, pricing, and intent to fetch the most reliable product options from Amazon.",
     icon: Sparkles,
@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     title: "Demo Environment Generator",
     subtitle: "Automation Tool",
-    tech: ["Python", "Automation", "MySQL"],
+    tech: ["Php", "MySQL"],
     description:
       "Automated tools for generating demo environments, reducing manual setup time by 80%. Streamlined deployment and configuration for client demonstrations.",
     icon: Code2,
@@ -50,7 +50,7 @@ const projects: Project[] = [
   {
     title: "Election Management System",
     subtitle: "Voter & District Control",
-    tech: ["PHP (Yii2)", "RBAC", "MySQL", "Data Scoping"],
+    tech: ["PHP (Yii2)", "RBAC", "MySQL"],
     description:
       "Contributed to election system platform with event-driven workflows, analytical dashboards, advanced filtering, queued export jobs with PDF generation, and survey modules.",
     icon: Code2,

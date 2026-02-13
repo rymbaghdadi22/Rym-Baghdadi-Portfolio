@@ -28,7 +28,7 @@ const Hero = ({ onScrollToProjects }: HeroProps) => {
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
-            {["PHP frameworks", "Python", "MySQL", "REST APIs", "Webhooks", "RBAC", "AWS"].map((skill) => (
+            {["PHP frameworks", "Python", "MySQL", "REST APIs", "Webhooks", "RBAC"].map((skill) => (
               <span
                 key={skill}
                 className="px-3 py-1.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground border border-border"

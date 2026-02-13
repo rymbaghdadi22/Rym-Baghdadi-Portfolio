@@ -47,6 +47,15 @@ const projects: Project[] = [
     icon: Code2,
     featured: false,
   },
+  {
+    title: "Election Management System",
+    subtitle: "Voter & District Control",
+    tech: ["PHP (Yii2)", "RBAC", "MySQL", "Data Scoping"],
+    description:
+      "Contributed to election system platform with event-driven workflows, analytical dashboards, advanced filtering, queued export jobs with PDF generation, and survey modules.",
+    icon: Code2,
+    featured: false,
+  },
 ];
 
 const Projects = () => {
